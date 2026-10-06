@@ -1,0 +1,56 @@
+name: field-boundary
+channels:
+  - conda-forge
+  - pytorch
+  - nvidia
+dependencies:
+  # Python
+  - python=3.10
+  
+  # Geospatial
+  - gdal::gdal
+  - geopandas
+  - rasterio
+  - shapely
+  - pyproj
+  - fiona
+  
+  # Deep Learning
+  - pytorch::pytorch
+  - pytorch::torchvision
+  - pytorch::pytorch-cuda=11.8
+  - pytorch::pytorch-lightning
+  
+  # Data Processing
+  - numpy
+  - pandas
+  - scipy
+  - scikit-learn
+  - scikit-image
+  
+  # Computer Vision
+  - opencv
+  - pillow
+  - imageio
+  
+  # Visualization
+  - matplotlib
+  - plotly
+  - seaborn
+  
+  # Jupyter
+  - jupyter
+  - jupyterlab
+  - ipywidgets
+  
+  # Utilities
+  - tqdm
+  - pyyaml
+  
+  # Pip dependencies (packages not in conda)
+  - pip
+  - pip:
+    - segmentation-models-pytorch
+    - albumentations
+    - tensorboard
+    - pydantic
